@@ -26,11 +26,8 @@
 
     <section id="start">
         <div class="container">
-            <div class="row d-flex justify-content-center align-item-center">
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4d19890287115.5e139f5047d55.gif" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="d-flex justify-content-center">  
-                 <button id="startBtn" class="btn btn-rounded btn-primary">👉 Open Birthday Wish 🎂</button>  
+            <div class="d-flex justify-content-center" >
+                <button id="startBtn" class="btn btn-rounded btn-primary" style="margin-top: 70%;">👉 Open Birthday Wish 🎂</button>
             </div>
         </div>
     </section>
@@ -267,8 +264,8 @@
                     <!--Body-->
                     <div class="modal-body">
                         <div class="text-center">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/71WMT+l0UbL.jpg"
-                                alt="thumbnail" class="img-thumbnail mb-4" style="width: 200px">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71WMT+l0UbL.jpg" alt="thumbnail"
+                                class="img-thumbnail mb-4" style="width: 200px">
                             <p>Wings of Fire: An Autobiography of APJ Abdul Kalam, former President of India. It was
                                 written by Dr. Abdul Kalam and Arun Tiwari.</p>
                         </div>
@@ -276,9 +273,10 @@
 
                     <!--Footer-->
                     <div class="modal-footer justify-content-center">
-                    
-                        <a type="button" href="https://drive.google.com/file/d/1IS25BMVSLtek8LYlxxx--KSnjBgbrtKt/view?usp=sharing" class="btn btn-primary">Download Book <i
-                                class="far fa-gem ml-1 text-white"></i></a>
+
+                        <a type="button"
+                            href="https://drive.google.com/file/d/1IS25BMVSLtek8LYlxxx--KSnjBgbrtKt/view?usp=sharing"
+                            class="btn btn-primary">Download Book <i class="far fa-gem ml-1 text-white"></i></a>
                         <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">No,
                             thanks</a>
                     </div>
@@ -298,27 +296,6 @@
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <script src="main.js"></script>
     <script>
-
-        $("#startBtn").click(function (e) { 
-            $("#start").attr("hidden", true);
-            $("#Banner").attr("hidden", false);
-            var audio = new Audio('asset/mp3/shot_B_day.mp3');
-            audio.play();
-        });
-
-        $(document).ready(function () {
-            $(".box-body").click(function () {
-
-                $(this).addClass("box-body-js");
-                party.confetti(this);
-
-                window.setTimeout(function(){
-                    $('#centralModalInfo').modal('show')
-                },4000)
-
-            });
-
-        });
 
     </script>
 
