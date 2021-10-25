@@ -24,7 +24,18 @@
 
 <body>
 
-    <section id="Banner">
+    <section id="start">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-item-center">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4d19890287115.5e139f5047d55.gif" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="d-flex justify-content-center">  
+                 <button id="startBtn" class="btn btn-rounded btn-primary">👉 Open Birthday Wish 🎂</button>  
+            </div>
+        </div>
+    </section>
+
+    <section id="Banner" hidden>
 
         <div class="container-fluid">
             <div class="row">
@@ -287,6 +298,12 @@
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <script src="main.js"></script>
     <script>
+
+        $("#startBtn").click(function (e) { 
+            $("#start").attr("hidden", true);
+            $("#Banner").attr("hidden", false);
+            
+        });
 
         $(document).ready(function () {
             $(".box-body").click(function () {
