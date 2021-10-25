@@ -1,9 +1,9 @@
 // confetti.start()
 $(document).ready(function () {
     
-    var audio = new Audio('asset/mp3/shot_B_day.mp3');
+  
     var audio1 = new Audio('asset/mp3/cheer.mp3');
-    audio.play();
+  
     
     window.setTimeout(function(){
         startConfetti()

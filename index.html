@@ -302,7 +302,8 @@
         $("#startBtn").click(function (e) { 
             $("#start").attr("hidden", true);
             $("#Banner").attr("hidden", false);
-            
+            var audio = new Audio('asset/mp3/shot_B_day.mp3');
+            audio.play();
         });
 
         $(document).ready(function () {
